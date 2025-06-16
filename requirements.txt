@@ -1,0 +1,8 @@
+langchain
+langchain-core
+langchain-community
+langgraph
+pydantic
+ipykernel
+langchain-openai
+langchain-google-genai
