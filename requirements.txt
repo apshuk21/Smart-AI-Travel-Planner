@@ -6,3 +6,4 @@ pydantic
 ipykernel
 langchain-openai
 langchain-google-genai
+langchain-tavily
