@@ -14,3 +14,7 @@ class DestinationInfo(BaseModel):
 destination_parser = PydanticOutputParser(pydantic_object=DestinationInfo)
 
 destination_parser_format_instructions = destination_parser.get_format_instructions()
+
+def format_destination_info(dest_info: DestinationInfo) -> str:
+    items = dest_info.model_dump(exclude_none=True)
+    return ", ".join(f"{key.capitalize()}: {value}" for key, value in items.items())
